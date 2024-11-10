@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",                             // ES5 is compatible with most browsers
+    "lib": ["dom", "es2015"],                    // Enables DOM and ES2015 features for web projects
+    "jsx": "react-jsx",                          // React JSX Transformation for React 17+
+    "module": "esnext",                          // Modern module system
+    "moduleResolution": "node",                  // Module resolution to node-style, which is common for React projects
+    "strict": true,                              // Enable all strict type-checking options
+    "esModuleInterop": true,                     // Enable interoperability between CommonJS and ES Modules
+    "skipLibCheck": true,                        // Skip type checking of all declaration files (*.d.ts)
+    "forceConsistentCasingInFileNames": true,    // Ensures consistent casing for imports
+    "noEmit": true,                              // Do not emit JavaScript files (since we're using Babel or Webpack for that)
+    "resolveJsonModule": true,                   // Allow importing JSON files
+    "isolatedModules": true,                     // Ensures that each file is treated as a module
+    "noUnusedLocals": true,                      // Report unused local variables
+    "noUnusedParameters": true,                  // Report unused function parameters
+    "noImplicitAny": true,                       // Ensure no variable has an implicit 'any' type
+    "noImplicitThis": true,                      // Report errors when 'this' has an implicit 'any' type
+    "strictNullChecks": true,                    // Enable strict null checks
+    "allowJs": true,                             // Allow JavaScript files in the project
+    "skipDefaultLibCheck": true                  // Skip type checking of default libraries
+  },
+  "include": ["src"],                            // Include all files in the 'src' directory
+  "exclude": ["node_modules"]                    // Exclude 'node_modules' folder from type checking
+}
